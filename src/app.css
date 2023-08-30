@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.steps .step:after {
+  height: 0.5rem;
+  width: 0.5rem;
+}
+
+.steps .step:before {
+  width: 0.1rem;
+}
+
+.steps-vertical .step {
+  gap: 0.1rem;
+  grid-template-columns: 20px 1fr;
+  grid-template-rows: auto;
+  min-height: 3rem;
+  justify-items: start;
+}
